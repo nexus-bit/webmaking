@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1.기본 페이지 구성과 스타일 초기화</title>
+    <link rel="stylesheet" href="reset.css">
+    <!--resetCSS를 다운받아서 외부CSS로 링크해둠(스타일 초기화)-->
+</head>
+
+<body>
+    <h1>기본 페이지 구성, 스타일 초기화</h1><hr>
+    <!--CSS로 꾸미기 위해서는, 기본 설정된 스타일(사이즈, href색상 등)을 reset 시켜준 후 다시 꾸며 줘야 함. reset하기 위해서는 reset CSS를 이용하는데 이는 회사가 만들거나 개인이 직접 만들거나 다운받아 쓰거나 해야 한다. 아래는 기본 페이지 구성-->
+    
+    <article class="page">
+        <header class="page-header">
+            <h1 class="page-title">페이지 제목</h1>
+            <nav class="global-menu">
+                <a href="#" class="global-menu-link">홈</a>
+                <a href="#" class="global-menu-link">소개</a>
+                <a href="#" class="global-menu-link">알림방</a>
+                <a href="#" class="global-menu-link">커뮤니티</a>
+                <a href="#" class="global-menu-link">연락처</a>
+                <!--하이퍼링크 집어넣을거 없으면 '#'-->
+            </nav>
+        </header>
+        
+        <br>메인 컨텐츠는 두 영역으로 나눌 것임<br>
+        컬럼을 쪼개서 레이아웃 잡기 용이하도록 2개의 블록을 하나의 div로 감싸줌<br>
+        <div class="content-container">
+            <section class="content-section">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum vitae exercitationem maxime est, aut tempora, accusantium quos dolorum aspernatur porro culpa ullam. Minima adipisci eos, optio veritatis quod nisi tempore.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non sed, incidunt architecto excepturi suscipit ex reiciendis deserunt eum vel asperiores, hic reprehenderit quasi rem mollitia illo officia earum libero atque dolore, nulla ab est provident. Laudantium quam aspernatur praesentium repellat molestias doloremque soluta blanditiis numquam, dolor, neque, molestiae consequatur. Rerum ipsum aspernatur natus consequatur aut numquam placeat mollitia totam temporibus laudantium. Quisquam laborum obcaecati quis, quia ducimus excepturi. Et voluptatum aspernatur repellendus perferendis corporis eum neque saepe eveniet placeat in quia at minima deleniti quo, aliquam, fugit. Quibusdam facere, alias dolorem temporibus placeat in, reprehenderit impedit possimus totam fugit?</p>
+            </section>
+        </div>
+        
+        <footer class="page-footer">
+            <p class="copyright">2019 &copy; 안녕하세요</p>
+            <!--'&copy'는 저작권 마크ⓒ가 들어감-->
+        </footer>
+    </article>
+    
+    <hr><a href="00.html">이전 페이지</a><a> </a><a href="02.html">다음 페이지</a>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>0.튜토리얼(아웃라인 엘리먼트)</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+    <style></style>
+</head>
+
+<body>
+    <h1>콘텐츠 그룹 태그(2) - 아웃라인 엘리먼트</h1>
+    <p>html5의 규정안입니다. 이를 준수하면 검색엔진이 좋아함</p><hr>
+    
+    <article>
+        article<br>
+        1.단독으로 사용 가능한 하나의 주제를 가진 내용을 담는 요소.<br>
+        2.하나의 article은 다른 웹페이지에 퍼 갔을 때 어색하지 않아야 함.<br>
+        -.ex)요리법에서 '재료'파트만 있으면 어색해짐.<br>
+        3.중첩 사용할 경우 하위article은 상위article과 관련된 내용이 와야 한다.<br>
+        4.포럼, 게시글, 댓글 등이 될 수 있고 글 뿐만 아니라 큰 그룹(웹페이지 전체)이 될 수 있다.<br>
+    </article><br>
+    <section>
+        section<br>
+        1.하나의 주제로 그룹화된 컨텐츠.<br>
+        2.article과 매우 비슷. 둘 중 무엇으로 먼저 묶던지 상관 없음.<br>
+        3.그 말인즉, 단독으로 사용 가능한 내용을 담을 경우article로 대신 할 수 있음<br>
+        4.섹션의 하위 항목에 제목 표시하는것을 추천.<br>
+    </section><br>
+    <header>
+        header<br>
+        1.웹사이트의 메뉴, 로고 등 위에 있는 영역.<br>
+        2.sectioning content(article, section, nav, aside)의 헤더.<br>
+        -.h1 등으로 제목, 주제 등을 쓸 수 있겠고, 검색창 등을 쓸 수 있음.<br>
+    </header><br>
+    <footer>
+        footer<br>
+        1.보통 끝에 표시하지만, 반드시 sectioning content 끝에 올 필요는 없음.<br>
+        -.기사의 경우 기자이름, 이메일 등을 쓸 수 있겠음
+    </footer><br>
+    <nav>
+        nav(네이게이션)<br>
+        -링크의 묶음. 홈페이지의 메뉴 등을 nav로 묶어라.(권장)<br>
+    </nav><br>
+    <aside>
+        aside<br>
+        -페이지 내용과 관련 없는 내용. (다른 기사 사이드바 등)<br>
+    </aside>
+    <h5>
+        h1~h6<br>
+        -sectioning content의 제목을 나타내고 서브타이틀로는 사용금지<br>
+        -다음은 잘못된 예시<br>
+    </h5>
+    
+    <!--다음은 잘못된 예시-->
+    <header>
+        <h1>※이것은 주제입니다.</h1>
+        <h2>→그 주제에 대한 서브타이틀</h2>
+        <!--h2도 어떤 sectioning content의 대장이어야함-->
+        <p>→서브타이틀은 h쓰지말고 p를 쓰자!!</p>
+    </header>
+    
+    <h2>레이아웃 구성 예시</h2>
+    <img src="html5 layout.png">
+    <article style="font-family: 'Nanum Brush Script', cursive; font-size:2em">
+        <header>article의 header-내용</header>
+        <section>
+            <header>section1의 header-내용</header>
+            section1-내용
+            <footer>section1의footer-내용(생략가능)</footer>
+        </section>
+        <section>
+            <header>section2의 header-내용</header>
+            section2-내용, footer생략OK
+        </section>
+        <footer>article의 footer-내용(생략가능)</footer>
+    </article>
+    
+    <hr><a href="../01_paullab_lecture/012.html">이전 강의</a><a> </a><a href="01.html">다음 페이지</a>
+</body>
+</html>
