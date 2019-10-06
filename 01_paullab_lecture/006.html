@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>6.CSS_1(CSS의 종류와 우선순위)</title>
+    <!--※html로 규격을 만들었으면 CSS(스타일시트)로 꾸밈-->
+    <!--※태그 내 CSS, 내부CSS, 외부CSS로 구분됨-->
+    <!--※밑으로 내려올수록 속성의 우선권이 강화됨-->
+    
+    <link rel="stylesheet" href="006.css">
+    <!--ㄴ외부CSS:html 문서 밖의 CSS를 불러옴-->
+    
+    <style>
+        h2{color:green;/*CSS내의 주석 다는 형태*/}
+    </style>
+</head>
+    
+<body>
+    <h1>CSS_1(CSS의 종류와 우선순위)</h1><hr>
+    
+    <h2>h2: 외부CSS는 파랑, 내부CSS는 초록</h2>
+    <!--ㄴ외부CSS에서 파랑이었지만 밑으로 내려오면서 내부CSS가 초록으로 바꾸어버림-->
+    
+    <h3 style='color:yellow;'>태그 내 CSS</h3>
+    <!--태그내CSS-->
+    
+    <hr><a href='005.html'> 이전 페이지</a><a href='007.html'> 다음 페이지</a>
+</body>
+</html>

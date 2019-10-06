@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>9.CSS_2(테두리, 글자 크기 단위)</title>
+    <style>
+         #teduri{
+            margin:30px;/*테두리 기점 밖에있는 여백*/
+            border:1px solid blue;/*테두리*/
+            padding-top:20px;/*테두리 기점 안에있는 여백*/
+            padding:10px 20px 30px 40px;/*시계방향으로 지정*/
+        }
+        
+        #one{font-size:10px;}
+        #two{font-size:4em;}
+        #three{font-size:400%;}
+        #four{font-size:.5vw;}
+        .red{color:red;}
+        .blu{color:blue;}
+    </style>
+</head>
+    
+<body>
+    <h1>CSS_2(테두리)</h1><hr>
+    
+    <h1 id='teduri'>hello world</h1><br><br><br>
+    
+<!----------------------------------------------->
+    <h1>CSS_2(글자 크기 단위)</h1><hr>
+    
+    <dl>
+        <dt class='blu'>고정 크기 단위</dt>
+        <dd class='red'>px, pt, in, cm, mm</dd><br>
+        <dt class=blu>가변 크기 단위</dt>
+        <dd class=red>em(배수단위), %(백분률), rem(루트em:최상위 요소 글자 크기에 따라 기준점이 달라짐)</dd>
+    </dl>
+    
+    <h1>10px로 할 경우</h1>
+    <p id='one'>다람쥐 헌 쳇바퀴에 타고파</p>
+    <h1>4em으로 했을 경우</h1>
+    <p id='two'>다람쥐 헌 쳇바퀴에 타고파</p>
+    <h1>400%(4em과 크기는 같아용)</h1>
+    <p id='three'>다람쥐 헌 쳇바퀴에 타고파</p>
+    <h1>0.5vm(전체화면값에서 어느정도의 면적을 차지할지)</h1>
+    <p id='four'>다람쥐 헌 쳇바퀴에 타고파</p>
+    
+<!----------------------------------------------->
+    <hr><a href="008.html">이전 페이지</a><a> </a><a href="010.html">다음 페이지</a>
+</body>
+</html>
