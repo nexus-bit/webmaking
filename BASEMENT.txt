@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2.내용내용내용내용</title>
+    <link rel="stylesheet" href="#">
+    <style></style>
+</head>
+
+<body>
+    <h1>내용내용내용내용</h1><hr>
+    
+    
+    
+    
+    <hr><a href="01.html">이전 페이지</a><a> </a><a href="03.html">다음 페이지</a>
+</body>
+</html>
